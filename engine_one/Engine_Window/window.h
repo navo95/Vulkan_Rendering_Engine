@@ -21,7 +21,7 @@ namespace Engine{
         uint32_t m_height;
         bool m_ShouldRunning= true;
 
-        static LRESULT WndProc(HWND hwnd,UINT uMsg,WPARAM wparam,LPARAM lparam);
+        static LRESULT CALLBACK WndProc(HWND hwnd,UINT uMsg,WPARAM wparam,LPARAM lparam);
 
         public:
         Windows(const char* title,uint32_t width,uint32_t height);

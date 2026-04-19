@@ -47,9 +47,5 @@ namespace Engine{
                 bool m_enable_Validation_layer = true;
             #endif()
 
-            
-
-
-
     };
 }

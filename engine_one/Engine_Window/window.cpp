@@ -3,7 +3,7 @@
 
 namespace Engine{
 
-    LRESULT Engine::Wndproc(HWND hwnd,UINT uMsg,WPARAM wparam,LPARAM lparam){
+    LRESULT CALLBACK Windows::WndProc(HWND hwnd,UINT uMsg,WPARAM wparam,LPARAM lparam){
         switch(uMsg){
             case WM_DESTROY:
                 PostQuitMessage(0);
@@ -23,7 +23,7 @@ namespace Engine{
 
         WNDCLASS wc= {};
 
-        wc.lpfnWndProc = &Wndproc; //required
+        wc.lpfnWndProc = &WndProc; //required
         wc.style = CS_HREDRAW| CS_VREDRAW;  //changes the entire widow ifa change in the height or widht occurs
         wc.cbClsExtra = 0; //field for extra memeory
 

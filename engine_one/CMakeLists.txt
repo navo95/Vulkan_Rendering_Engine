@@ -9,9 +9,11 @@ find_package(Vulkan REQUIRED)
 
 
 set(SOURCES
-    "./Engine/window.cpp"
+    "./Engine_Window/window.cpp"
     "./main.cpp"
     "./Vulkan/Vulkan_initialization/Vulkan_instance.cpp"
+    "./Vulkan/physical_device/VulkanPhysicalDevice.cpp"
+
 
 )
 
@@ -20,8 +22,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 set(internal_headers
     "./Engine_Window"
     "./Vulkan/Vulkan_initialization"
-
-
+    "./Vulkan/physical_device"
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${internal_headers})

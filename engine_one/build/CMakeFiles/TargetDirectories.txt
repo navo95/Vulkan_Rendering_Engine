@@ -1,0 +1,3 @@
+C:/Users/navon/OneDrive/Desktop/Vulkan_Rendering_Engine/engine_one/build/CMakeFiles/engine_one.dir
+C:/Users/navon/OneDrive/Desktop/Vulkan_Rendering_Engine/engine_one/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/navon/OneDrive/Desktop/Vulkan_Rendering_Engine/engine_one/build/CMakeFiles/ZERO_CHECK.dir

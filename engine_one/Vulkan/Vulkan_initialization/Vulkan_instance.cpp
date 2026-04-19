@@ -111,10 +111,9 @@ namespace Engine{
             createinfo.ppEnabledExtensionNames = extensions.data();
             createinfo.ppEnabledLayerNames = validation_layers.data();
             createinfo.enabledLayerCount = 0;
-            //get the vulkan instance handle
-            VkInstance vulkan_Instance = Get_vulkan_Instance_handle();
+            
             //create the instance
-            if(vkCreateInstance(&createinfo,nullptr,&vulkan_Instance)!=VK_SUCCESS){
+            if(vkCreateInstance(&createinfo,nullptr,& v_hInstance)!=VK_SUCCESS){
                 throw std::runtime_error("error ocured in creation of the Vulkan instance");
                 
             }
