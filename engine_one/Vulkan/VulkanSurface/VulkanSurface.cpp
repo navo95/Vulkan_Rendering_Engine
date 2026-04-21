@@ -43,8 +43,6 @@ namespace Engine{
             throw std::runtime_error("surface coudn't be created");
         }   
 
-        
-
     }
 
 }

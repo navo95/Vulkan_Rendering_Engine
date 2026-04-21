@@ -36,12 +36,18 @@ namespace Engine{
         vkEnumerateInstanceLayerProperties(&no_of_layers,layer_prop_structs.data());
         //find if our 'validation_layers' is present there or not
         for(const char* layer_name:layer){
+            bool isFound=false;
             for(VkLayerProperties layer_struct:layer_prop_structs){
-                if(strcmp(layer_name,layer_struct.layerName)!=0){
+                if(strcmp(layer_name,layer_struct.layerName)==0){
                     
-                    return false;
+                    isFound = true; //layer is found break the inner loop
+                    
                 }   
 
+            }
+            if(isFound==false){
+
+                throw std::runtime_error("a validation layer is not found");
             }
         }
         return true;
@@ -72,13 +78,18 @@ namespace Engine{
 
         //chekc if our required extensions are present there or not if yes then return them
         for(const char* ext_name:required_extensions){
+            bool is_found = false;
             for(VkExtensionProperties prop:all_extensions){
                 if(strcmp(ext_name,prop.extensionName)==0){
-                    supported_extensions.push_back(prop.extensionName);
+                    is_found = true;
+                    
                 }
             }
+            if(is_found = false){
+                throw std::runtime_error("a extension is absent");
+            }
         }
-        return supported_extensions;
+        return required_extensions;
 
 
     }
@@ -108,6 +119,7 @@ namespace Engine{
             createinfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
             
             createinfo.pApplicationInfo = &appinfo;
+            createinfo.enabledExtensionCount = extensions.size();
             createinfo.ppEnabledExtensionNames = extensions.data();
             createinfo.ppEnabledLayerNames = validation_layers.data();
             createinfo.enabledLayerCount = 0;
@@ -120,15 +132,7 @@ namespace Engine{
 
 
         }
-        throw std::runtime_error("the validations layers not present");
-
 
     }
-
-
-
-
-
-
 
 }//namespace Engine

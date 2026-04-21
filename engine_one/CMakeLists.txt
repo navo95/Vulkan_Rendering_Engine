@@ -12,8 +12,10 @@ set(SOURCES
     "./Engine_Window/window.cpp"
     "./main.cpp"
     "./Vulkan/Vulkan_initialization/Vulkan_instance.cpp"
-    "./Vulkan/physical_device/VulkanPhysicalDevice.cpp"
-
+    
+    "./Vulkan/PhysicalDevice/Vulkan_physicalDevice.cpp"
+    "./Vulkan/inspect_gpu/inspect_gpu.cpp"
+    "./Vulkan/VulkanSurface/VulkanSurface.cpp"
 
 )
 
@@ -23,6 +25,11 @@ set(internal_headers
     "./Engine_Window"
     "./Vulkan/Vulkan_initialization"
     "./Vulkan/physical_device"
+    "./third_party/glm"
+    "./Vulkan/VulkanSurface"
+    "./Vulkan/PhysicalDevice"
+    "./Vulkan/inspect_gpu"
+
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${internal_headers})

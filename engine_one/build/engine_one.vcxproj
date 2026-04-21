@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.335.0/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -114,10 +114,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -144,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.335.0/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -173,10 +173,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -203,7 +203,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.335.0/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -232,10 +232,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -262,7 +262,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.4.335.0/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -290,10 +290,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Engine_Window;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\Vulkan_initialization;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\physical_device;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\third_party\glm;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\VulkanSurface;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\PhysicalDevice;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\.\Vulkan\inspect_gpu;C:\VulkanSDK\1.4.335.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -379,6 +379,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Engine_Window\window.cpp" />
     <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\main.cpp" />
     <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\Vulkan_initialization\Vulkan_instance.cpp" />
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\PhysicalDevice\Vulkan_physicalDevice.cpp" />
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\inspect_gpu\inspect_gpu.cpp" />
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\VulkanSurface\VulkanSurface.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

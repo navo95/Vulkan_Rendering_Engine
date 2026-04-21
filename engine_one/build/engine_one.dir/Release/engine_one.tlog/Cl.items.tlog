@@ -1,3 +1,6 @@
 C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Engine_Window\window.cpp;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\build\engine_one.dir\Release\window.obj
 C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\main.cpp;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\build\engine_one.dir\Release\main.obj
 C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\Vulkan_initialization\Vulkan_instance.cpp;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\build\engine_one.dir\Release\Vulkan_instance.obj
+C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\PhysicalDevice\Vulkan_physicalDevice.cpp;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\build\engine_one.dir\Release\Vulkan_physicalDevice.obj
+C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\inspect_gpu\inspect_gpu.cpp;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\build\engine_one.dir\Release\inspect_gpu.obj
+C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\VulkanSurface\VulkanSurface.cpp;C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\build\engine_one.dir\Release\VulkanSurface.obj

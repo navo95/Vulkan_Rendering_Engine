@@ -17,11 +17,6 @@ namespace Engine{
             VkInstance v_hInstance = VK_NULL_HANDLE; //to avoid garbage value initialisation
             HINSTANCE m_hinstance=VK_NULL_HANDLE;
 
-            
-
-
-
-
         public:
             Vulkan_Instance(const char* applicationname,HINSTANCE hinstance);
             ~Vulkan_Instance();
@@ -34,7 +29,7 @@ namespace Engine{
 
             //vector to hold the names of the validaion layers
             std::vector<const char*> validation_layers{
-                "VULKAN_LAYER_KHRONOS_VALIDATION"
+                "VK_LAYER_KHRONOS_validation"
             };
 
             //function to check if vulkan supportd the validation layers mentioned in the 'validation_layers'
@@ -49,3 +44,4 @@ namespace Engine{
 
     };
 }
+

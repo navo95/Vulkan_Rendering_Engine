@@ -24,10 +24,9 @@ namespace Engine{
         ~VulkanSurface();
 
         void CreateVulkanWindowSurface(Windows& window,Vulkan_Instance& instance);//function to create the surface
-
-
-
-
+        
     };
 }
+
+
 

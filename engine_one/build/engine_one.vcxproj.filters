@@ -10,6 +10,15 @@
     <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\Vulkan_initialization\Vulkan_instance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\PhysicalDevice\Vulkan_physicalDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\inspect_gpu\inspect_gpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\VulkanSurface\VulkanSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\CMakeLists.txt" />

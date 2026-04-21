@@ -1,5 +1,6 @@
 #include "window.h"
 #include<stdexcept>
+#include "Vulkan_Instance.h"
 
 namespace Engine{
 
@@ -30,6 +31,7 @@ namespace Engine{
         wc.lpszClassName = "Vulkan basic Renderer"; //register window name
 
         wc.hInstance  = m_hinstance; //rrequired
+        wc.hbrBackground = CreateSolidBrush(134);
         
 
         //register the class
@@ -89,6 +91,7 @@ namespace Engine{
             if(msg.message == WM_QUIT){
                 m_ShouldRunning=false;
             }
+
             TranslateMessage(&msg);
             DispatchMessage(&msg);
         }
