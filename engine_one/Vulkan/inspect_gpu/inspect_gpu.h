@@ -11,17 +11,7 @@ namespace Engine{
     class Inspect_Gpu{
         private:
 
-            struct Queueindices{
-                std::optional<uint32_t>graphics_Indice;
-                std::optional<uint32_t>present_Indice;
 
-                VkResult isPresent(){
-                    if(!graphics_Indice.has_value() || !present_Indice.has_value()){
-                        throw std::runtime_error("the gpu can't be used");
-                    }
-                    
-                }
-            };
 
 
         public:
@@ -30,7 +20,7 @@ namespace Engine{
             //global gpu handle
             VkPhysicalDevice gpu_handle;
 
-            Queueindices indice;
+            
 
             //vector to hold all the final filtered device handles
 

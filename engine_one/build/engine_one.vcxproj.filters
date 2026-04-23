@@ -19,6 +19,18 @@
     <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\VulkanSurface\VulkanSurface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\gpu_querry\gpu_querry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\Vulkan_QueueInfo\queueInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\Vulkan_Logical_Device\logical_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\Vulkan\Queue_Handles\queue_handle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\CMakeLists.txt" />

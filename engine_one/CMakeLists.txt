@@ -16,6 +16,10 @@ set(SOURCES
     "./Vulkan/PhysicalDevice/Vulkan_physicalDevice.cpp"
     "./Vulkan/inspect_gpu/inspect_gpu.cpp"
     "./Vulkan/VulkanSurface/VulkanSurface.cpp"
+    "./Vulkan/gpu_querry/gpu_querry.cpp"
+    "./Vulkan/Vulkan_QueueInfo/queueInfo.cpp"
+    "./Vulkan/Vulkan_Logical_Device/logical_device.cpp"
+    "./Vulkan/Queue_Handles/queue_handle.cpp"
 
 )
 
@@ -29,7 +33,10 @@ set(internal_headers
     "./Vulkan/VulkanSurface"
     "./Vulkan/PhysicalDevice"
     "./Vulkan/inspect_gpu"
-
+    "./Vulkan/gpu_querry"
+    "./Vulkan/Vulkan_QueueInfo"
+    "./Vulkan/Vulkan_Logical_Device"
+    "./Vulkan/Queue_Handles"
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${internal_headers})
