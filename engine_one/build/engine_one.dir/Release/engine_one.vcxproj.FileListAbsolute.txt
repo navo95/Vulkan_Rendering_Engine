@@ -1,2 +1,0 @@
-C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\build\Release\vulkan-1.dll
-C:\Users\navon\OneDrive\Desktop\Vulkan_Rendering_Engine\engine_one\build\engine_one.dir\Release\engine_o.1E65D340.Up2Date
