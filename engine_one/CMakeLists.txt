@@ -12,7 +12,6 @@ set(SOURCES
     "./Engine_Window/window.cpp"
     "./main.cpp"
     "./Vulkan/Vulkan_initialization/Vulkan_instance.cpp"
-    
     "./Vulkan/PhysicalDevice/Vulkan_physicalDevice.cpp"
     "./Vulkan/inspect_gpu/inspect_gpu.cpp"
     "./Vulkan/VulkanSurface/VulkanSurface.cpp"
@@ -20,6 +19,8 @@ set(SOURCES
     "./Vulkan/Vulkan_QueueInfo/queueInfo.cpp"
     "./Vulkan/Vulkan_Logical_Device/logical_device.cpp"
     "./Vulkan/Queue_Handles/queue_handle.cpp"
+    "./Vulkan/swapchain/choose_swapchain_options/swapchain_option.cpp"
+    "./Vulkan/swapchain/swapchain_support/swapchain_support.cpp"
 
 )
 
@@ -37,6 +38,8 @@ set(internal_headers
     "./Vulkan/Vulkan_QueueInfo"
     "./Vulkan/Vulkan_Logical_Device"
     "./Vulkan/Queue_Handles"
+    "./Vulkan/swapchain/choose_swapchain_options"
+    "./Vulkan/swapchain/swapchain_support"
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${internal_headers})
@@ -45,9 +48,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 
     Vulkan::Vulkan
     comdlg32
-
-
-
 )
 
 #process the shaders
