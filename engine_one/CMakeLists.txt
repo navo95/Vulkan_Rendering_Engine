@@ -21,6 +21,7 @@ set(SOURCES
     "./Vulkan/Queue_Handles/queue_handle.cpp"
     "./Vulkan/swapchain/choose_swapchain_options/swapchain_option.cpp"
     "./Vulkan/swapchain/swapchain_support/swapchain_support.cpp"
+    "./Vulkan/swapchain/create_swapchain_instance/swapchain_instance.cpp"
 
 )
 
@@ -40,6 +41,7 @@ set(internal_headers
     "./Vulkan/Queue_Handles"
     "./Vulkan/swapchain/choose_swapchain_options"
     "./Vulkan/swapchain/swapchain_support"
+    "./Vulkan/swapchain/create_swapchain_instance"
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${internal_headers})

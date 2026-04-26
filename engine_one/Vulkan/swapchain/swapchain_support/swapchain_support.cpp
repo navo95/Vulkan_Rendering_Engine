@@ -6,8 +6,7 @@ SwapchainSupport::SwapchainSupport(VkPhysicalDevice gpu_device,VkSurfaceKHR surf
   swapchain_object = fill_the_struct(gpu_device, surface);
 }
 
-SwapchainSupport::swapchain_struct
-SwapchainSupport::fill_the_struct(VkPhysicalDevice gpu_device,VkSurfaceKHR surface) {
+SwapchainSupport::swapchain_struct SwapchainSupport::fill_the_struct(VkPhysicalDevice gpu_device,VkSurfaceKHR surface) {
   swapchain_struct struct_object;
   // fill in the capabilities
   vkGetPhysicalDeviceSurfaceCapabilitiesKHR(gpu_device, surface, &struct_object.capabilities);
@@ -18,6 +17,7 @@ SwapchainSupport::fill_the_struct(VkPhysicalDevice gpu_device,VkSurfaceKHR surfa
 
   vkGetPhysicalDeviceSurfaceFormatsKHR(gpu_device, surface, &gpu_surface_extension, nullptr);
     if (gpu_surface_extension >= 1) {
+        struct_object.format.resize(gpu_surface_extension); //we need to resize them according to the no of objects/struct to be filled in them or else will cause memory overload 
         vkGetPhysicalDeviceSurfaceFormatsKHR(gpu_device, surface, &gpu_surface_extension,struct_object.format.data());
     }
 
@@ -25,6 +25,7 @@ SwapchainSupport::fill_the_struct(VkPhysicalDevice gpu_device,VkSurfaceKHR surfa
   uint32_t presentmodes_count;
   vkGetPhysicalDeviceSurfacePresentModesKHR(gpu_device, surface, &presentmodes_count, nullptr);
     if (presentmodes_count >= 1) {
+        struct_object.presentMode.resize(presentmodes_count);
         vkGetPhysicalDeviceSurfacePresentModesKHR(gpu_device, surface, &presentmodes_count,struct_object.presentMode.data());
     }
 

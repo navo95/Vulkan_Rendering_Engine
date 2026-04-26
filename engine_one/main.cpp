@@ -11,6 +11,7 @@
 #include <stdexcept>
 #include "swapchain_support.h"
 #include"swapchain_option.h"
+#include"swapchain_instance.h"
 
 
 int main() {
@@ -71,7 +72,14 @@ int main() {
     std::cout<<"the filtered forma for the coloSpace is  "<<filtered_values.selected_swapchain_options.surface_format.colorSpace<<std::endl;
     std::cout<<"the filtered present mode is "<<filtered_values.selected_swapchain_options.presentMode<<std::endl;
 
+    //creating the swapchain Instance
 
+    //swapchain_instance(LogicalDevice& Logical_Device,VulkanSurface& surface,swapchain_options& swapchain_options_object,QueueHandle& queue_handle)
+    
+    Engine::swapchain_instance swapchain(logical_device,Vulkan_Window_Surface,filtered_values,queue_handle_object);
+
+
+    
 
     // -----non-repetative tasks to be done
     // once----------------------------------------

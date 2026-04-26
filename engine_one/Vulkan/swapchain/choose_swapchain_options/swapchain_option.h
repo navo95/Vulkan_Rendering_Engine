@@ -21,7 +21,6 @@ namespace Engine{
             uint32_t min_image_count;
             swapchain_options(SwapchainSupport& object,Windows& window);
             ~swapchain_options();
-        
-
+    
     };
 }
