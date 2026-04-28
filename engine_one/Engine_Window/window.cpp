@@ -91,6 +91,9 @@ namespace Engine{
             if(msg.message == WM_QUIT){
                 m_ShouldRunning=false;
             }
+            else{
+                
+            }
 
             TranslateMessage(&msg);
             DispatchMessage(&msg);

@@ -12,6 +12,9 @@
 #include "swapchain_support.h"
 #include"swapchain_option.h"
 #include"swapchain_instance.h"
+#include"swapchain_images.h"
+#include"swapchain_image_view.h"
+
 
 
 int main() {
@@ -78,10 +81,39 @@ int main() {
     
     Engine::swapchain_instance swapchain(logical_device,Vulkan_Window_Surface,filtered_values,queue_handle_object);
 
+    //get the swapchain images
+    uint32_t no_of_swapchain_images;
+    std::vector<VkImage> Raw_Images;
+
+    Engine::Get_Swapchain_Images get_swapchain_images(swapchain,logical_device,no_of_swapchain_images);
+    Raw_Images.resize(no_of_swapchain_images);
+
+    Raw_Images = get_swapchain_images.all_the_images;
+
+    if(Raw_Images.size()>0){
+        for(const auto& image_handle:Raw_Images){
+        std::cout<<"image_handle: "<<image_handle<<std::endl;
+    }
+    }
+    else{
+      throw std::runtime_error("image handles to the swapchain_images not done");
+    }
+    //now create  the VkImageView for each for the corresponding VkImage .this step is to be done only once
+    
+    Engine::swapchain_image_view VkImage_gpu_ins(Raw_Images,filtered_values,logical_device);
+    //the VkImage instructions per VkImage in he vector for are
+
+    std::vector<VkImageView> VkImage_gpu_instructions; //------------------------------->gpu instructions per VkImage
+    VkImage_gpu_instructions.resize(VkImage_gpu_ins.Get_ImageView().size());
+    VkImage_gpu_instructions = VkImage_gpu_ins.Get_ImageView();
+    //--Render pass---------------------------------------------------
+    //the blueprint for the gpu tom draw into the VkImage
+    
+
 
     
 
-    // -----non-repetative tasks to be done
+    // -----non-repetative tasks to be done-------------------
     // once----------------------------------------
     // now get the Process_Messages() function
     Window.Process_Messages();

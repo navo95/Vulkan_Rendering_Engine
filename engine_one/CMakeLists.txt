@@ -22,6 +22,9 @@ set(SOURCES
     "./Vulkan/swapchain/choose_swapchain_options/swapchain_option.cpp"
     "./Vulkan/swapchain/swapchain_support/swapchain_support.cpp"
     "./Vulkan/swapchain/create_swapchain_instance/swapchain_instance.cpp"
+    "./Vulkan/swapchain/swapchain_Images/swapchain_images.cpp"
+    "./Vulkan/swapchain/swapchain_image_view/swapchain_image_view.cpp"
+
 
 )
 
@@ -42,6 +45,8 @@ set(internal_headers
     "./Vulkan/swapchain/choose_swapchain_options"
     "./Vulkan/swapchain/swapchain_support"
     "./Vulkan/swapchain/create_swapchain_instance"
+    "./Vulkan/swapchain/swapchain_Images"
+    "./Vulkan/swapchain/swapchain_image_view"
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${internal_headers})

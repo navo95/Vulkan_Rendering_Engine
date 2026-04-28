@@ -29,7 +29,7 @@ namespace Engine{
                 //different queue families exists
                 
                 std::cout<<"implementing the VK_SHARING_MODE_CONCURRENT"<<std::endl;
-                create_info.imageSharingMode = VK_SHARING_MODE_CONCURRENT;
+                create_info.imageSharingMode = VK_SHARING_MODE_EXCLUSIVE;
                 create_info.queueFamilyIndexCount = unique_indice.size();
                 uint32_t queue_indices_array[] = {queue_handle.m_queue_indices.graphics_indice,queue_handle.m_queue_indices.present_indice,queue_handle.m_queue_indices.transfer_indice,queue_handle.m_queue_indices.compute_indice};
                 create_info.pQueueFamilyIndices = queue_indices_array; //it has to be array
