@@ -14,6 +14,7 @@
 #include"swapchain_instance.h"
 #include"swapchain_images.h"
 #include"swapchain_image_view.h"
+#include"render_pass.h"
 
 
 
@@ -108,11 +109,8 @@ int main() {
     VkImage_gpu_instructions = VkImage_gpu_ins.Get_ImageView();
     //--Render pass---------------------------------------------------
     //the blueprint for the gpu tom draw into the VkImage
+    Engine::RenderPass(logical_device,filtered_values);
     
-
-
-    
-
     // -----non-repetative tasks to be done-------------------
     // once----------------------------------------
     // now get the Process_Messages() function

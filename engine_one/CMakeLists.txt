@@ -24,7 +24,8 @@ set(SOURCES
     "./Vulkan/swapchain/create_swapchain_instance/swapchain_instance.cpp"
     "./Vulkan/swapchain/swapchain_Images/swapchain_images.cpp"
     "./Vulkan/swapchain/swapchain_image_view/swapchain_image_view.cpp"
-
+    "./Vulkan/RenderPass/create_render_pass/render_pass.cpp"
+    
 
 )
 
@@ -47,6 +48,8 @@ set(internal_headers
     "./Vulkan/swapchain/create_swapchain_instance"
     "./Vulkan/swapchain/swapchain_Images"
     "./Vulkan/swapchain/swapchain_image_view"
+    "./Vulkan/RenderPass/create_render_pass"
+    
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${internal_headers})

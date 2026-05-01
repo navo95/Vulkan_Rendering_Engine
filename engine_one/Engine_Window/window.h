@@ -29,7 +29,7 @@ namespace Engine{
 
         HWND get_hwnd(){return m_hwnd;}
 
-        void Process_Messages();
+        void Process_Messages(); //  this shall start the game loop as well
 
         HINSTANCE get_hinstance(){return m_hinstance;}
 
