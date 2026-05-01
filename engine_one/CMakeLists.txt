@@ -25,7 +25,7 @@ set(SOURCES
     "./Vulkan/swapchain/swapchain_Images/swapchain_images.cpp"
     "./Vulkan/swapchain/swapchain_image_view/swapchain_image_view.cpp"
     "./Vulkan/RenderPass/create_render_pass/render_pass.cpp"
-    
+    "./Vulkan/framebuffer/framebuffer.cpp"
 
 )
 
@@ -49,6 +49,7 @@ set(internal_headers
     "./Vulkan/swapchain/swapchain_Images"
     "./Vulkan/swapchain/swapchain_image_view"
     "./Vulkan/RenderPass/create_render_pass"
+    "./Vulkan/framebuffer"
     
 )
 

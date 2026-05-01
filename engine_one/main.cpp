@@ -15,6 +15,7 @@
 #include"swapchain_images.h"
 #include"swapchain_image_view.h"
 #include"render_pass.h"
+#include"framebuffer.h"
 
 
 
@@ -109,7 +110,14 @@ int main() {
     VkImage_gpu_instructions = VkImage_gpu_ins.Get_ImageView();
     //--Render pass---------------------------------------------------
     //the blueprint for the gpu tom draw into the VkImage
-    Engine::RenderPass(logical_device,filtered_values);
+    Engine::RenderPass Create_renderpass(logical_device,filtered_values);
+
+    //crreating the framebuffer objects for each of the VkImageVIew objects 
+    Engine::FrameBuffer frame_buffer_objects(logical_device,filtered_values,VkImage_gpu_ins,Create_renderpass,get_swapchain_images);
+    //get the frambeuffer objects to the VkImageViews vector**
+
+    std::vector<VkFramebuffer> framebuffer_objects = frame_buffer_objects.Get_Framebuffers();
+    
     
     // -----non-repetative tasks to be done-------------------
     // once----------------------------------------

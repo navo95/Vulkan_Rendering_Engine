@@ -16,5 +16,6 @@ namespace Engine{
 
             RenderPass(LogicalDevice& Logical_Device,swapchain_options& SwapchainOptions);
             ~RenderPass();
+            VkRenderPass& Get_Render_pass(){return renderpass;}
     };
 }
