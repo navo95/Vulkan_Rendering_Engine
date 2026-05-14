@@ -19,6 +19,8 @@
 
 
 
+
+
 int main() {
 
   try {
@@ -117,7 +119,9 @@ int main() {
     //get the frambeuffer objects to the VkImageViews vector**
 
     std::vector<VkFramebuffer> framebuffer_objects = frame_buffer_objects.Get_Framebuffers();
+    //graphics pipeline------------------------
     
+   
     
     // -----non-repetative tasks to be done-------------------
     // once----------------------------------------

@@ -25,7 +25,7 @@ namespace Engine{
         WNDCLASS wc= {};
 
         wc.lpfnWndProc = &WndProc; //required
-        wc.style = CS_HREDRAW| CS_VREDRAW;  //changes the entire widow ifa change in the height or widht occurs
+        wc.style = CS_HREDRAW| CS_VREDRAW;  //changes the entire widow accordinglly  if a change in the height or width occurs
         wc.cbClsExtra = 0; //field for extra memeory
 
         wc.lpszClassName = "Vulkan basic Renderer"; //register window name

@@ -1,2 +1,6 @@
 build/
-ins.txt/
+ins.txt
+practice_folder/
+graphics_pipeline/read.txt
+graphics_pipeline/readme.md
+graphics_pipeline/Buffers/command_buffer/readme.md
